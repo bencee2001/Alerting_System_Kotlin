@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9050a87e-3237-46ee-90b8-3df3327f52dd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/parent-module/alert-service/src/main/kotlin/com/bme/kotlin/alertservice/Model/AlertMessage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-module/alert-service/src/main/kotlin/com/bme/kotlin/alertservice/Repository/AlertMessageRepo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-module/report-service/src/main/kotlin/com/bme/kotlin/reportservice/Model/AckMessage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-module/report-service/src/main/kotlin/com/bme/kotlin/reportservice/Model/Alert.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-module/report-service/src/main/kotlin/com/bme/kotlin/reportservice/Model/Event.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-module/report-service/src/main/kotlin/com/bme/kotlin/reportservice/Model/Status.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-module/report-service/src/main/kotlin/com/bme/kotlin/reportservice/Repository/AckMessageRepo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-module/report-service/src/main/kotlin/com/bme/kotlin/reportservice/Repository/AlertRepo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-module/report-service/src/main/kotlin/com/bme/kotlin/reportservice/Repository/EventRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-module/report-service/src/main/kotlin/com/bme/kotlin/reportservice/Web/ReportController.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PFHjm1eg4FyVkDa9c1ljcBPe5a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bence/Desktop/Kotlin/Alerting_System_Kotlin/parent-module&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9050a87e-3237-46ee-90b8-3df3327f52dd" name="Changes" comment="" />
+      <created>1683046046594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683046046594</updated>
+      <workItem from="1683046047738" duration="10000" />
+      <workItem from="1683048404792" duration="22000" />
+      <workItem from="1683148747286" duration="13000" />
+      <workItem from="1684246107222" duration="24000" />
+      <workItem from="1684266615026" duration="152000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
