@@ -49,13 +49,13 @@ A parancsok beírása után a program fut.
 
 Indítás után itt érhetőek el a Swagger-ek:
 
-[Report Swagger](http://localhost:8080/swagger-ui/index.html)
+[Report Swagger](http://localhost:8080/swagger-ui/index.html) (port: 8080)
 
-[Police Swagger](http://localhost:8081/swagger-ui/index.html)
+[Police Swagger](http://localhost:8081/swagger-ui/index.html) (port: 8081)
 
-[Fire Department Swagger](http://localhost:8082/swagger-ui/index.html)
+[Fire Department Swagger](http://localhost:8082/swagger-ui/index.html) (port: 8082)
 
-[Hospital Service](http://localhost:8083/swagger-ui/index.html)
+[Hospital Service](http://localhost:8083/swagger-ui/index.html) (port: 8083)
 
 A utolsó 3 megegyezőek hiszen ugyan az a microservice az alapja, viszont más adatbázison dolgoznak.
 
