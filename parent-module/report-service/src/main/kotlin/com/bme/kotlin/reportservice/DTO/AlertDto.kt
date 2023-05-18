@@ -4,7 +4,7 @@ package com.bme.kotlin.reportservice.DTO
 data class AlertDto(
     val id: Int,
     val eventID: Int,
-    val ackMessageId: Int?,
+    val messageId: Int?,
 ){
 
 }

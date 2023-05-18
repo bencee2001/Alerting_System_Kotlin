@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query
 import org.springframework.stereotype.Repository
 
 @Repository
-interface AlertMessageRepo : JpaRepository<Message, Int>{
+interface MessageRepo : JpaRepository<Message, Int>{
 
     @Query("select distinct am.alert_id from Message am")
     fun getExistingAlertIds():Set<Int>;

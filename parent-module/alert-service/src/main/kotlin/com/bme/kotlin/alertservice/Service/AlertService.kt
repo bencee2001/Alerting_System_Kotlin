@@ -3,14 +3,14 @@ package com.bme.kotlin.alertservice.Service
 import com.bme.kotlin.alertservice.Errors.AlreadyExistsException
 import com.bme.kotlin.alertservice.Errors.NoSuchMessageException
 import com.bme.kotlin.alertservice.Model.Message
-import com.bme.kotlin.alertservice.Repository.AlertMessageRepo
+import com.bme.kotlin.alertservice.Repository.MessageRepo
 import com.bme.kotlin.webclient.extensions.unwrap
 import com.bme.kotlin.webclient.webclient.WebClientService
 import org.springframework.stereotype.Service
 
 @Service
 class AlertService(
-    private val alertMessageRepo: AlertMessageRepo,
+    private val messageRepo: MessageRepo,
     private val webClientService: WebClientService
 ) {
     /**
@@ -20,9 +20,9 @@ class AlertService(
      * @return new Message with alertId
      */
     fun save(alertId: Int): Message {
-        if(alertMessageRepo.getExistingAlertIds().contains(alertId))
+        if(messageRepo.getExistingAlertIds().contains(alertId))
             throw AlreadyExistsException("This alert id($alertId) is already exists")
-        return alertMessageRepo.save(Message(alertId))
+        return messageRepo.save(Message(alertId))
     }
 
     /**
@@ -31,8 +31,9 @@ class AlertService(
      * @param messageId the id of the message
      */
     fun send(messageId: Int) {
-        val alertMessage = alertMessageRepo.findById(messageId).unwrap() ?: throw NoSuchMessageException()
+        val alertMessage = messageRepo.findById(messageId).unwrap() ?: throw NoSuchMessageException()
         webClientService.sendToReport(alertMessage.toDto())
+        messageRepo.delete(alertMessage)
     }
 
     /**
@@ -40,7 +41,7 @@ class AlertService(
      * @return list of messages
      */
     fun getMessages(): List<Message> {
-        return alertMessageRepo.findAll()
+        return messageRepo.findAll()
     }
 
 

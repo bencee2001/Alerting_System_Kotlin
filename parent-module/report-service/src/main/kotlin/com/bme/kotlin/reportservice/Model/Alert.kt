@@ -10,13 +10,13 @@ class Alert (
     @JoinColumn(name = "event_id")
     val event:Event,
 
-    var ackMessageId: Int? = null,
+    var messageId: Int? = null,
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int=0,
 ){
     fun toDto():AlertDto{
-        return AlertDto(this.id,this.event.id, this.ackMessageId)
+        return AlertDto(this.id,this.event.id, this.messageId)
     }
 }

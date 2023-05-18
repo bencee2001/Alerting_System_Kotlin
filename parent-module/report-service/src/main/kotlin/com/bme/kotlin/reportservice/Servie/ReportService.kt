@@ -58,7 +58,7 @@ class ReportService(
     fun answerAlert(messageDto: MessageDto): EventDto {
         var alert = alertRepo.findById(messageDto.alert_Id).unwrap()
             ?: throw NoSuchAlertException("No Alerto on id ${messageDto.alert_Id}")
-        alert.ackMessageId = messageDto.message_Id
+        alert.messageId = messageDto.message_Id
         alertRepo.save(alert)
         return checkEvent(alert.event).toDto()
     }
@@ -79,7 +79,7 @@ class ReportService(
 
     private fun isAllAlertAnswered(alertList: List<Alert>): Boolean {
         alertList.forEach {
-            it.ackMessageId ?: return false
+            it.messageId ?: return false
         }
         return true
     }
