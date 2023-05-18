@@ -32,16 +32,16 @@ Ide a következő 4 parancsot kell beírni:
 
 1.  Report Service Indítása:
 
-    gradle report-service:bootRun
+        gradle report-service:bootRun
 2. Police Alert Service Indítása:
 
-    gradle alert-service:bootRun --args='--spring.profiles.active=police' 
+        gradle alert-service:bootRun --args='--spring.profiles.active=police' 
 3. Fire Department Alert Service Indítása:
 
-    gradle alert-service:bootRun --args='--spring.profiles.active=fire'
+        gradle alert-service:bootRun --args='--spring.profiles.active=fire'
 4. Hospital Alert Service Indítása:
 
-    gradle alert-service:bootRun --args='--spring.profiles.active=hospital'
+        gradle alert-service:bootRun --args='--spring.profiles.active=hospital'
 
 A parancsok beírása után a program fut.
 
@@ -63,7 +63,7 @@ A utolsó 3 megegyezőek hiszen ugyan az a microservice az alapja, viszont más 
 
 Report esetén : PGAdmin, vagy IntelliJ Ultimate beépített
 
-Alert esetén : http://localhost:80{adott service}/h2-console/, vagy IntelliJ Ultimate beépített
+Alert esetén : http://localhost:80 {adott service}/h2-console/, vagy IntelliJ Ultimate beépített
 	
 [Pl.: H2 database console](http://localhost:8082/h2-console)
 
